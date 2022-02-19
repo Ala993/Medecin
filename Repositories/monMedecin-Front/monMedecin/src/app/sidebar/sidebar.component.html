@@ -1,0 +1,11 @@
+<div style="margin-top: 50px;" >
+    <ul *ngFor="let item of menuItems; let index = index" class="list-group">
+        <li class="list-group-item" style="background-color: #0275d8;border-radius: 0px !important;" *ngIf="index === 0"  >
+              <a class="btn" style=" padding: 2px 10px;">  <i class="{{item.icon}}"></i> {{item.item}}</a>
+         </li>
+        <li class="list-group-item" style="border-radius: 0px !important;" *ngIf="index !== 0" >
+          <a class="btn" >{{item.item}}</a>
+        </li>
+      </ul>
+</div>
+
